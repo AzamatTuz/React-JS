@@ -1,0 +1,26 @@
+header {
+    background: #414141;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 100px;
+}
+
+.link {
+    text-decoration: none;
+    font-size: 18px;
+    margin: 15px;
+    color: white;
+    padding: 15px;
+    transition: .4s all;
+    border-radius: 10px;
+
+    &:hover {
+        background: #272727;
+    }
+}
+
+.logo {
+    width: 60px;
+    border-radius: 100%;
+}
