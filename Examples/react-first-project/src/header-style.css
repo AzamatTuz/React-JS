@@ -1,0 +1,51 @@
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    background: #122324;
+    position: sticky;
+    top: 0;
+}
+
+span {
+    color: #fff;
+}
+
+.logo {
+    width: 80px;
+    border-radius: 100px;
+    box-shadow: 
+    2px 2px 10px rgb(255, 0, 0),
+    -2px -2px 10px rgb(255, 149, 0)
+    ;
+}
+
+.headLinks {
+    display: flex;
+    gap: 50px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+.link::before {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    height: 2px;
+    scale: 0;
+    width: 100%;
+    background: #fff;
+    border-radius: 5px;
+    transition: .2s all ease-in-out;
+}
+
+.link:hover::before {
+    scale: 1;
+}

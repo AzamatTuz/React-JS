@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #545748;
+}
+
+.skillCards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    gap: 15px;
+    width: 180px;
+    background: #78768c;
+    color: #122324;
+    padding: 15px;
+    border-radius: 30px;
+    box-shadow: 
+    5px 5px 10px rgb(0, 149, 255),
+    -5px -5px 10px rgb(255, 149, 0)
+    ;
+}
+
+.skillCards img {
+    border-radius: 20px;
+    width: 140px;
+}
+
+.dataSection {
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+    width: calc(280px * 3);
+}
+
+.mainImage {
+    margin-top: 50px;
+    box-shadow: 
+    5px 5px 10px rgb(0, 149, 255),
+    -5px -5px 10px rgb(255, 149, 0)
+    ;
+}
+
+.readeMore {
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #122324;
+    transition: 0.2s all;
+    cursor: pointer;
+    
+
+    &:hover {
+        box-shadow: 
+        5px 5px 10px rgb(0, 149, 255),
+        -5px -5px 10px rgb(255, 149, 0)
+        ;
+
+        animation: rgbShadow 2s infinite linear;
+    }
+}
+
+@keyframes rgbShadow {
+    0% {
+        box-shadow: 
+        5px 5px 10px rgb(0, 149, 255),
+        -5px -5px 10px rgb(255, 149, 0)
+        ;
+    }
+
+    25% {
+        box-shadow: 
+        -5px 5px 10px rgb(0, 149, 255),
+        5px -5px 10px rgb(255, 149, 0)
+        ;
+    }
+
+    50% {
+        box-shadow: 
+        -5px -5px 10px rgb(0, 149, 255),
+        5px 5px 10px rgb(255, 149, 0)
+        ;
+    }
+
+    75% {
+        box-shadow: 
+        5px -5px 10px rgb(0, 149, 255),
+        -5px 5px 10px rgb(255, 149, 0)
+        ;
+    }
+
+    100% {
+        box-shadow: 
+        5px 5px 10px rgb(0, 149, 255),
+        -5px -5px 10px rgb(255, 149, 0)
+        ;
+    }
+}

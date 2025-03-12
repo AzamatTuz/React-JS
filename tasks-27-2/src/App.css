@@ -1,0 +1,18 @@
+* {
+  font-family: sans-serif;
+}
+
+div {
+  padding: 10px;
+  font-size: 1.4em;
+}
+
+.darkMode {
+  background: #363636;
+  color: white;
+}
+
+.lightMode {
+  background: #fff;
+  color: black;
+}
