@@ -1,0 +1,50 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  border: none;
+  outline: none;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.orderPizzaForm {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+
+.orderPizzaForm input {
+  width: 300px;
+  padding: 10px;
+  font-size: 16px;
+  background: #363636;
+  color: #fff;
+  border-radius: 10px;
+
+  &::placeholder {
+    color: #fff;
+  }
+}
+
+.orderPizzaForm button {
+  padding: 10px 25px;
+  border-radius: 10px;
+  background: #363636;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.4s all;
+  font-size: 18px;
+  font-weight: 600;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}

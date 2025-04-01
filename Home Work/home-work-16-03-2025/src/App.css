@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.Main {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.btns {
+    display: flex;
+    gap: 15px;
+}
+
+.btns button {
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    background: #0080ff;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 17px;
+    font-family: sans-serif;
+    font-weight: bold;
+    transition: .2s all linear;
+
+    &:hover {
+        background: #006edd;
+
+    }
+}
+
+.list {
+    margin-top: 50px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2px;
+    background: #cecece;
+    border-radius: 10px;
+    border: 2px solid #cecece;
+    overflow: hidden;
+}
+
+li {
+    width: 300px;
+    font-size: 18px;
+    background: #fff;
+    padding: 10px;
+}
